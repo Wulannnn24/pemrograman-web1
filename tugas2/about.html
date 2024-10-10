@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Tiket Pesawat</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+    <h1>Form Pemesanan Tiket Pesawat</h1>
+
+    
+    <form>
+        <fieldset>
+            <legend><h2>Informasi Penumpang</h2></legend>
+
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required><br><br>
+
+        <label for="nomorIdentitas">Nomor Identitas (KTP/Paspor):</label><br>
+        <input type="text" id="nomorIdentitas" name="nomorIdentitas" placeholder="Masukkan Nomor Identitas" required><br><br>
+
+        <label for="jenisKelamin">Jenis Kelamin:</label><br>
+        <select id="jenisKelamin" name="jenisKelamin">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select><br><br>
+
+        <label for="email">Alamat Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Masukkan Email"><br><br>
+
+        <label for="telepon">Nomor Telepon:</label><br>
+        <input type="tel" id="telepon" name="telepon" placeholder="Masukkan Nomor Telepon"><br><br>
+    </fieldset>
+
+        
+        <fieldset>
+            <legend><h2>Informasi Penerbangan</h2></legend>
+
+        <label for="bandaraKeberangkatan">Bandara Keberangkatan:</label><br>
+        <select id="bandaraKeberangkatan" name="bandaraKeberangkatan">
+            <option value="CGK">Soekarno-Hatta (CGK)</option>
+            <option value="LOP">Zainuddin Abdul Majid (LOP)</option>
+            <option value="DPS">I Gusti Ngurah Rai (DPS)</option>
+            <option value="UPG">Sultan Hasanuddin (UPG)</option>
+            <option value="SRG">Jendral Ahmad Yani (SRG)</option>
+            <option value="BTJ">Sultan Iskandar Muda</option>
+            <option value="HLP">Halim Perdana Kusuma (HLP)</option>
+            <option value="SUB">Juanda (SUB)</option>
+            <option value="KNO">Kualanamu (KNO)</option>
+            <option value="PNK">Supadio (PNK)</option>
+            <option value="HLP">Halim Perdanakusuma (HLP)</option>
+            <option value="JOG">Adisutjipto (JOG) </option>
+            <option value="PLM">Sultan Mahmud Badaruddin II (PLM)</option>
+            <option value="BDO">Husein Sastranegara (BDO)</option>
+            <option value="BTH">Hang Nadim (BTH)</option>
+            <option value="BPN">Sultan Aji Muhammad Sulaiman (BPN)</option>
+            </select><br><br>
+
+        <label for="bandaraTujuan">Bandara Tujuan:</label><br>
+        <select id="bandaraTujuan" name="bandaraTujuan">
+            <option value="CGK">Soekarno-Hatta (CGK)</option>
+            <option value="BIL">Zainuddin Abdul Majid (BIL)</option>
+            <option value="DPS">I Gusti Ngurah Rai (DPS)</option>
+            <option value="UPG">Sultan Hasanuddin (UPG)</option>
+            <option value="SRG">Jendral Ahmad Yani (SRG)</option>
+            <option value="BTJ">Sultan Iskandar Muda (BTJ)</option>
+            <option value="HLP">Halim Perdana Kusuma (HLP)</option>
+            <option value="SUB">Juanda (SUB)</option>
+            <option value="KNO">Kualanamu (KNO)</option>
+            <option value="PNK">Supadio (PNK)</option>
+            <option value="HLP">Halim Perdanakusuma (HLP)</option>
+            <option value="JOG">Adisutjipto (JOG) </option>
+            <option value="PLM">Sultan Mahmud Badaruddin II (PLM)</option>
+            <option value="BDO">Husein Sastranegara (BDO)</option>
+            <option value="BTH">Hang Nadim (BTH)</option>
+            <option value="BPN">Sultan Aji Muhammad Sulaiman (BPN)</option>
+            </select><br><br>
+
+        <label for="tanggalKeberangkatan">Tanggal Keberangkatan:</label><br>
+        <input type="date" id="tanggalKeberangkatan" name="tanggalKeberangkatan" required><br><br>
+
+        <label for="tanggalKepulangan">Tanggal Kepulangan (opsional):</label><br>
+        <input type="date" id="tanggalKepulangan" name="tanggalKepulangan"><br><br>
+
+        <label for="jumlahPenumpang">Jumlah Penumpang:</label><br>
+        <input type="number" id="jumlahPenumpang" name="jumlahPenumpang" min="1" value="1" required><br><br>
+
+        <label for="kelasPenerbangan">Kelas Penerbangan:</label><br>
+        <select id="kelasPenerbangan" name="kelasPenerbangan">
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Bisnis">Bisnis</option>
+            <option value="First Class">First Class</option>
+        </select><br><br>
+    </fieldset>
+
+        
+    <fieldset>
+        <legend><h2>Metode Pembayaran</h2></legend>
+
+        <label>Pilih Metode Pembayaran:</label><br>
+        <input type="radio" id="kartuKredit" name="metodePembayaran" value="Kartu Kredit">
+        <label for="kartuKredit">Kartu Kredit</label><br>
+        <input type="radio" id="transferBank" name="metodePembayaran" value="Transfer Bank">
+        <label for="transferBank">Transfer Bank</label><br>
+        <input type="radio" id="eWallet" name="metodePembayaran" value="E-Wallet">
+        <label for="eWallet">E-Wallet (GoPay, OVO, dll.)</label><br><br>
+    </fieldset>
+        <button type="submit">Pesan Tiket</button>
+
+    </form>
+</body>
+</html>
